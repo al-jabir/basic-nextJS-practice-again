@@ -11,17 +11,7 @@ const FirstPost = () => {
       </Head>
       <div style={{ textAlign: 'center' }}>
         <h1>First blog post</h1>
-        <Image
-          src={pic}
-          alt='this is pic'
-          width={300}
-          height={400}
-          style={{
-            border: '1px solid tomato',
-            borderRadius: '1rem',
-            margin: 'auto',
-          }}
-        />
+        <Image src={pic} alt='this is pic' width={300} height={400} />
       </div>
     </>
   );
