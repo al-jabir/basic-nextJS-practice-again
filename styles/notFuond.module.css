@@ -1,0 +1,12 @@
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  color: tomato;
+  text-align: center;
+  margin-top: 6rem;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(to right, #55ce8e, #356adc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
