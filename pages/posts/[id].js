@@ -1,14 +1,15 @@
-import Layout from '../layout/layout';
 import { getAllPost } from '../lib/helper';
 
-const Post = ({ post }) => {
-  // console.log(post);
+const Post = ({ data }) => {
+  console.log(data);
   return (
     <article>
-      {post.map((item) => {
-        <Layout key={item.id}>
-          <h1>{item.title}</h1>
-        </Layout>;
+      {data.map((p) => {
+        <div key={p.id}>
+          <h1>{p.id}</h1>
+          <h4>{p.title}</h4>
+          <p>{p.des}</p>
+        </div>;
       })}
     </article>
   );
@@ -16,11 +17,12 @@ const Post = ({ post }) => {
 
 export default Post;
 
-export const getStaticProps = async () => {
-  const post = getAllPost();
+export const getStaticProps = async ({ params }) => {
+  const { id } = params;
+  const data = getAllPost();
 
   return {
-    props: { post },
+    props: { data },
   };
 };
 

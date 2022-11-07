@@ -1,4 +1,4 @@
-export const getAllPost = () => {
+export const getAllPost = (id) => {
   const postData = [
     {
       id: 1,
@@ -11,9 +11,9 @@ export const getAllPost = () => {
       des: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa sint quis porro molestias tempora maxime!',
     },
   ];
-  /* if (id) {
+  if (id) {
     return postData.filter((post) => post.id === id);
   }
- */
+
   return postData;
 };
