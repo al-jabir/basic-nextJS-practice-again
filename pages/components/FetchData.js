@@ -7,7 +7,7 @@ const FetchData = ({ users }) => {
       {users.map(({ id, name, email }) => {
         return (
           <div key={id}>
-            <h1>{name}</h1>
+            <h3>{name}</h3>
             <p>{email}</p>
           </div>
         );
